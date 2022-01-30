@@ -10,15 +10,16 @@ import java.util.Scanner;
 public class Projeto {
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
-		System.out.println("Informe a quantidade de notas ");
+		
+		System.out.printf("Informe a quantidade de notas: ");
 		int numNota = entrada.nextInt();
-		System.out.println(numNota);
+		//System.out.println(numNota);
 		
 		double [] notasAluno = new double[numNota];
 		
 		
 		for(int i = 0; i<notasAluno.length; i++) {
-			System.out.println("Informe a nota " + (i + 1) + "ª: ");
+			System.out.printf("Informe a nota " + (i + 1) + "ª: ");
 			notasAluno[i] = entrada.nextDouble();
 		}
 
@@ -26,6 +27,7 @@ public class Projeto {
 		for(double nota: notasAluno) {
 			total += nota;
 		}
+		
 		double media = total / notasAluno.length;
 		//System.out.println("média é " + media +"!");
 		entrada.close();
