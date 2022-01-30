@@ -1,5 +1,6 @@
 package com.nunespc;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Projeto2 {
@@ -27,6 +28,10 @@ public class Projeto2 {
 		
 		double media = total / (qtdAluno * qtdNota);
 		System.out.println("Média da turma é "+media+"!");
+		
+		for (double [] nota: notaDaTurma) {
+			System.out.println(Arrays.toString(nota));
+		}
 		entrada.close();
 	}
 
