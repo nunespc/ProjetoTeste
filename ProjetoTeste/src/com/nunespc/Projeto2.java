@@ -18,7 +18,7 @@ public class Projeto2 {
 		
 		for(int a=0; a<notaDaTurma.length; a++) {
 			for (int n=0; n<notaDaTurma[a].length; n++) {
-				System.out.printf("Informe a nota "+(n+1)+"ª do "+(a+1)+"º aluno: ", n, a);
+				System.out.printf("Informe a nota %dª do %dº aluno: ", n + 1, a + 1);
 					notaDaTurma[a][n] = entrada.nextDouble();
 					total += notaDaTurma[a][n];
 				}
