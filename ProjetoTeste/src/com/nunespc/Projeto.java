@@ -1,6 +1,5 @@
 package com.nunespc;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /*
